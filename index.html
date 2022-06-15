@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 모바일은 화면크기를 자동으로 줄여서 표현하는 방식. 1:1사이즈의 대응을 위하여 viewport코드를 추갛ㄴ다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+        })
+    </script>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        a{text-decoration: underline;color: inherit;}
+        #social{width: 1400px;margin: auto;margin-top: 50px;}
+        #social_title{background: url(icons/grey-line.png)center repeat-x;}
+        #social_title_box{width:335px;margin: auto;background-color: #fff;text-align: center;}
+        #social_title_box_img{width: 85%;}
+        #social>ul{width: 100%;overflow: hidden;margin-top:2%;}
+        #social>ul>li{width: 23.5%;float: left;position: relative;margin-right: 2%;margin-bottom: 2%;cursor: pointer;background-color: #000;}
+        #social>ul>li:nth-child(4n){margin-right: 0;}
+        #social>ul>li>.social_img{width: 100%;vertical-align: top;}
+        #social>ul>li:hover>.social_img{opacity: 0.5;}
+        #social>ul>li>.social_zoom{position: absolute;left: 0;right: 0; top: 0;bottom: 0;margin: auto;display: none;}
+        #social>ul>li:hover>.social_zoom{display: inline;}
+
+    </style>
+    <style>
+        @media all and (min-width:320px){/*320~767 모바일*/
+            #social{width:100%;}
+            #social_title{background: none;}
+            #social_title_box{width:300px;}
+            #social>ul>li{width: 49%;}
+            #social>ul>li:nth-child(2n){margin-right: 0;}
+        }
+        @media all and (min-width:768px){/*768~1023 태블릿*/
+            #social{width:100%;}
+            #social_title{background: url(icons/grey-line.png)center repeat-x;}
+            #social_title_box{width: 300px;}
+            #social>ul>li{width: 23.5%;}
+            #social>ul>li:nth-child(2n){margin-right: 2%;}
+            #social>ul>li:nth-child(4n){margin-right: 0;}
+        }
+        @media all and (min-width:1400px){/*1024 pc*/
+            #social{width: 1400px;}
+            #social_title{background: url(icons/grey-line.png)center repeat-x;}
+            #social>ul>li{width: 23.5%;}
+            #social>ul>li:nth-child(2n){margin-right: 2%;}
+            #social>ul>li:nth-child(4n){margin-right: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div id="social">
+        <div id="social_title">
+            <div id="social_title_box">
+                <img src="icons/logo-rlsocial.png" alt="" id="social_title_box_img">
+                <h5>NEW IN THE WORLD OF @RALPHLAUREN</h5>
+            </div>
+        </div>
+        <ul>
+            <li><img src="images/content_sccial1.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial2.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial3.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial4.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial5.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial6.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial7.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+            <li><img src="images/content_sccial8.jpg" alt="" class="social_img"><img src="images/zoom.png" alt="" class="social_zoom"></li>
+        </ul>
+    </div>
+</body>
+</html>
